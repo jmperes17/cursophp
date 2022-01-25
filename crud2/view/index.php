@@ -10,6 +10,8 @@
     <title>Crud 2.0</title>
   </head>
   <body id="body">
+    <?php include_once "../model/db.php"; ?>
+    <?php include_once "../controller/percorrerTabela.php"; ?>
 
     <div id="table">
       
@@ -21,6 +23,20 @@
             <td>Status</td>
           </tr>
       </table>
+
+    <tbody>
+    <table border="1">
+          <tr>
+            <td><?php echo $row['id']?></td>
+            <td>Nome</td>
+            <td>Email</td>
+            <td>Status</td>
+          </tr>
+      </table>
+      
+    </tbody>
+
+
 
     </div>
 
