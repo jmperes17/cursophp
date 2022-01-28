@@ -9,10 +9,10 @@
         <!-- Bootstrap CSS -->
         <link href="style.css" rel="stylesheet">
     </head>
-    <h4 class="titulo">Listagem de Produtos - Keener.Io</h4>
+    <h4 class="titulo">Usuarios - Keener.Io</h4>
     <hr></hr>
     <br><br>
-    <div class="produtos">
+    <div class="produto">
        
 
         <table class="tabela" width="800" border="2px" cellpadding = "5px" cellspacing = "2px" align="center" >
@@ -20,8 +20,8 @@
                 <tr>  
                   <th> ID  </th>
                   <th> Nome </th>
-                  <th> Data de cadastro </th>
-                  <th> Quantidade </th>
+                  <th> Login </th>
+                  <th> Senha </th>
                 </tr>
               </thead>
     </div>
@@ -30,7 +30,7 @@
                 <?php
                     include_once "db.php";
 
-                    $query = 'SELECT * FROM produtos';
+                    $query = 'SELECT * FROM usuarios';
                     /* executar a consulta e testar se ocorreu erro */
                     if (!$resultado = $conexao->query($query)) {
                         echo ' Falha na consulta: '. $conexao->error;
@@ -43,10 +43,10 @@
 
                 ?> 
                 <tr>
-                  <td><?php echo $row['id_produto']; ?></td>
-                  <td><?php echo $row['nome_produto']; ?></td>
-                  <td><?php echo $row['data_cadastro']; ?></td>
-                  <td><?php echo $row['qtd_produto']; ?></td>
+                  <td><?php echo $row['id_usuario']; ?></td>
+                  <td><?php echo $row['nome_usuario']; ?></td>
+                  <td><?php echo $row['login']; ?></td>
+                  <td><?php echo $row['senha']; ?></td>
                   
                 </tr>
                 <?php

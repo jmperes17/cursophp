@@ -7,6 +7,8 @@
 
     <!-- Bootstrap CSS -->
     <link href="style.css" rel="stylesheet">
+    
+    
 
     <title>Cadastro</title>
   </head>
@@ -16,13 +18,18 @@
     <div class="login">
         <p> Entre com suas credenciais para acesso à pagina de produtos </p><br>
 
-        <label>Login</label>
-        <input type= "name" id="name"><br>
-        <label>Senha</label>
-        <input type= "senha" id="senha"><br><br>
-        <a href="produtos.php" name="entrar">Entrar</a><br>
-        <p> Não tem acesso ainda ? Realize cadastro clicando no link abaixo:</p><br>
-        <a href="cadastro.html" name="cadastro">Cadastro</a>
+        <form action="produtos.php" class="form-login">
+        
+          <i class="fa fa-user"></i>
+          <label>Login</label>
+          <input type= "name" id="name" required><br>
+          <label>Senha</label>
+          <input type= "senha" id="senha" required><br><br>
+          <button type="submit" class="button">Entrar</button><br>
+          <p> Não tem acesso ainda ? Realize cadastro clicando no link abaixo:</p><br>
+          <a href="cadastro.html" name="cadastro">Cadastro</a>
+
+        </form>
 
 
 
