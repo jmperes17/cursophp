@@ -9,7 +9,7 @@ class Pagina extends CI_Controller {
 	
 	
 	public function index() {
-        echo "tudo ok";
+        $this->load->view('home.php');
 
 	}
 }

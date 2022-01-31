@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <?php
-    include "menu.html";
+    $this->load->view("menu.html");
 ?>
 
 
@@ -17,7 +17,7 @@
                 <div class="container">
                     <div class="row p-5">
                         <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="./assets/img/palmeiras_treino2.jfif" alt="">
+                            <img class="img-fluid" src="../assets/img/palmeiras_treino2.jfif" alt="">
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left align-self-center">
@@ -37,7 +37,7 @@
                 <div class="container">
                     <div class="row p-5">
                         <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="./assets/img/palmeiras_home.jfif" alt="">
+                            <img class="img-fluid" src="../assets/img/palmeiras_home.jfif" alt="">
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left">
@@ -57,7 +57,7 @@
                 <div class="container">
                     <div class="row p-5">
                         <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="./assets/img/italia_branca.png" alt="">
+                            <img class="img-fluid" src="../assets/img/italia_branca.png" alt="">
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left">
@@ -93,17 +93,17 @@
         </div>
         <div class="row">
             <div class="col-12 col-md-4 p-5 mt-3">
-                <a href="#"><img src="./assets/img/camisapsg.png" class="rounded-circle img-fluid border"></a>
+                <a href="#"><img src="../assets/img/camisapsg.png" class="rounded-circle img-fluid border"></a>
                 <h5 class="text-center mt-3 mb-3">Camisa PSG</h5>
                 <p class="text-center"><a class="btn btn-success">Comprar</a></p>
             </div>
             <div class="col-12 col-md-4 p-5 mt-3">
-                <a href="#"><img src="./assets/img/milan.png" class="rounded-circle img-fluid border"></a>
+                <a href="#"><img src="../assets/img/milan.png" class="rounded-circle img-fluid border"></a>
                 <h2 class="h5 text-center mt-3 mb-3">Camisa Milan</h2>
                 <p class="text-center"><a class="btn btn-success">Comprar</a></p>
             </div>
             <div class="col-12 col-md-4 p-5 mt-3">
-                <a href="#"><img src="./assets/img/mancity.png" class="rounded-circle img-fluid border"></a>
+                <a href="#"><img src="../assets/img/mancity.png" class="rounded-circle img-fluid border"></a>
                 <h2 class="h5 text-center mt-3 mb-3">Camisa Manchester City</h2>
                 <p class="text-center"><a class="btn btn-success">Comprar</a></p>
             </div>
@@ -127,7 +127,7 @@
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
                         <a href="shop-single.php">
-                            <img src="./assets/img/bola-nike.png" class="card-img-top" alt="...">
+                            <img src="../assets/img/bola-nike.png" class="card-img-top" alt="...">
                         </a>
                         <div class="card-body">
                             <ul class="list-unstyled d-flex justify-content-between">
@@ -151,7 +151,7 @@
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
                         <a href="shop-single.php">
-                            <img src="./assets/img/feature_prod_02.jpg" class="card-img-top" alt="...">
+                            <img src="../assets/img/feature_prod_02.jpg" class="card-img-top" alt="...">
                         </a>
                         <div class="card-body">
                             <ul class="list-unstyled d-flex justify-content-between">
@@ -175,7 +175,7 @@
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card h-100">
                         <a href="shop-single.php">
-                            <img src="./assets/img/feature_prod_03.jpg" class="card-img-top" alt="...">
+                            <img src="../assets/img/feature_prod_03.jpg" class="card-img-top" alt="...">
                         </a>
                         <div class="card-body">
                             <ul class="list-unstyled d-flex justify-content-between">
@@ -201,18 +201,18 @@
     </section>
     <!-- End Featured Product -->
      <!-- Footer -->
-    <?php include "footer.html" ?>;
+    <?php $this->load->view("footer.html" ) ?>;
      <!-- Footer -->
 
 
     
 
     <!-- Start Script -->
-    <script src="assets/js/jquery-1.11.0.min.js"></script>
-    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/templatemo.js"></script>
-    <script src="assets/js/custom.js"></script>
+    <script src="../assets/js/jquery-1.11.0.min.js"></script>
+    <script src="../assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/templatemo.js"></script>
+    <script src="../assets/js/custom.js"></script>
     <!-- End Script -->
 </body>
 
