@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <head>
-    <title>Jm Sports</title>
+    <title><?php echo $titulo ?></title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -15,7 +15,7 @@
 
     <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
-    <link rel="stylesheet" href="/assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome.min.css">
 <!--
     
 
@@ -51,7 +51,7 @@ https://templatemo.com/tm-559-zay-shop
     <nav class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container d-flex justify-content-between align-items-center">
 
-            <a class="navbar-brand text-success logo h1 align-self-center" href="index.php">
+            <a class="navbar-brand text-success logo h1 align-self-center" href="<?php echo base_url(); ?>">
                 Jm Sports
             </a>
 
@@ -63,16 +63,16 @@ https://templatemo.com/tm-559-zay-shop
                 <div class="flex-fill">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="home.php>">Home</a>
+                            <a class="nav-link" href="<?php echo base_url(); ?>">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.php">Sobre</a>
+                            <a class="nav-link" href="<?php echo base_url('sobre'); ?>">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="shop.php">Cátalago</a>
+                            <a class="nav-link" href="<?php echo base_url(''); ?>">Cátalago</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.php">Contato</a>
+                            <a class="nav-link" href="<?php echo base_url('contato'); ?>">Contato</a>
                         </li>
                     </ul>
                 </div>
@@ -92,7 +92,7 @@ https://templatemo.com/tm-559-zay-shop
                         <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
                         <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
                     </a>
-                    <a class="nav-icon position-relative text-decoration-none" href="login2.html">
+                    <a class="nav-icon position-relative text-decoration-none" href="<?php echo base_url('login'); ?>">
                         <i class="fa fa-fw fa-user text-dark mr-3"></i>
                         <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
                     </a>

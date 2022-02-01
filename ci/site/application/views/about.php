@@ -1,5 +1,5 @@
 <?php
-include "menu.html";
+$this->load->view('menu.html');
 
 ?>
 <!DOCTYPE html>
@@ -20,14 +20,14 @@ include "menu.html";
                     </p>
                 </div>
                 <div class="col-md-4">
-                    <img src="assets/img/gol.svg" alt="About Hero">
+                    <img src="../assets/img/gol.svg" alt="About Hero">
                 </div>
             </div>
         </div>
     </section>
     <!-- Close Banner -->
 
-    <?php include "footer.html" ; ?>
+    <?php $this->load->view('footer.html'); ?>
 
     <!-- Start Script -->
     <script src="assets/js/jquery-1.11.0.min.js"></script>
