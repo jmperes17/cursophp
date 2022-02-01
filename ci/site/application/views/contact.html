@@ -3,6 +3,36 @@
 
 <?php $this->load->view('menu.html'); ?>
 
+<div class="trabalhe-conosco">
+    <h4>Trabalhe Conosco</h4>
+
+<?php
+    echo form_open('pagina/contato');
+
+    echo form_label("Seu nome:", "nome");
+    echo form_input("Nome");
+    echo "<br>";
+
+    echo form_label("Seu email:", "email");
+    echo form_input("Email");
+    echo "<br>";
+
+    echo form_label("CPF:", "cpf");
+    echo form_input("CPF");
+    echo "<br>";
+    
+    form_upload();
+
+    echo form_submit("enviar","Enviar", array('class'=>'botao'));
+    echo "<br>";
+
+    
+
+
+    echo form_close();
+?>
+</div>
+
 <?php $this->load->view('footer.html'); ?>
 
 

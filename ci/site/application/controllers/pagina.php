@@ -23,6 +23,7 @@ class Pagina extends CI_Controller {
 	}
 
 	public function contato() {
+		$this->load->helper('form');
 		$dados['contato'] = 'Contato - Jm Sports';
         $this->load->view('contact.html', $dados);
 
