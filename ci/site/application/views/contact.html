@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <?php $this->load->view('menu.html'); ?>
 
-<div class="trabalhe-conosco">
+<div class="trabalhe-conosco" align="center">
     <h4>Trabalhe Conosco</h4>
 
 <?php
-    echo form_open('pagina/contato');
-
+   
+    echo form_open('site/contato');
+    
+    
     echo form_label("Seu nome:", "nome");
-    echo form_input("Nome");
+    echo form_input("Nome", set_value("nome"));
     echo "<br>";
 
     echo form_label("Seu email:", "email");
@@ -30,6 +32,7 @@
 
 
     echo form_close();
+    echo "<br>";
 ?>
 </div>
 

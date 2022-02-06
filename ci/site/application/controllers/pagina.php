@@ -17,26 +17,26 @@ class Pagina extends CI_Controller {
 	}
 
 	public function sobre() {
-		$dados['sobre'] = 'Sobre - Jm Sports';
+		$dados['titulo'] = 'Sobre - Jm Sports';
         $this->load->view('about.php', $dados);
 
 	}
 
 	public function contato() {
 		$this->load->helper('form');
-		$dados['contato'] = 'Contato - Jm Sports';
+		$dados['titulo'] = 'Contato - Jm Sports';
         $this->load->view('contact.html', $dados);
 
 	}
 
 	public function catalago() {
-		$dados['catalago'] = 'Catalago - Jm Sports';
+		$dados['titulo'] = 'Catalago - Jm Sports';
         $this->load->view('shop.html', $dados);
 
 	}
 
 	public function login() {
-		$dados['login'] = 'Login - Jm Sports';
+		$dados['titulo'] = 'Login - Jm Sports';
         $this->load->view('login2.html', $dados);
 
 	}
